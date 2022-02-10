@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    padding-block: 1em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+/* p{
+    text-align: center;
+} */
+
+img{
+    height: 30vh;
+    animation-name: myanimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    
+}
+
+@keyframes myanimation{
+    0%{
+        transform: rotateZ(45deg);
+    }
+
+    25%{
+        transform: rotateZ(135deg);
+    }
+    
+    50%{
+        transform: rotateZ(225deg);
+    }
+
+    75%{
+        transform: rotateZ(315deg);
+    }
+
+    100%{
+        transform: rotateZ(405deg);
+    }
+}
+
+.count-items > div {
+    text-align: center;
+}
+
+.count-container{
+    padding-block: 2em;
+}
+
+.count-items{
+    padding-block: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
